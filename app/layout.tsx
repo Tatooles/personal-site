@@ -12,6 +12,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // TODO: Could do something fun with the banner
   const banner = (
     <Banner storageKey="4.0-release">
       🎉 Nextra 4.0 is released.{" "}
