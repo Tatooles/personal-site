@@ -34,29 +34,45 @@ export default function Home() {
             center.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="/blog"
-          >
-            Test Blog Post
-          </a>
+        <div className="flex w-full flex-col gap-4">
+          <h2 className="text-xl font-semibold text-black dark:text-zinc-50">
+            Recent Posts
+          </h2>
+          <div className="flex flex-col gap-3">
+            <a
+              href="/blog/creating-the-lifting-log"
+              className="group flex flex-col gap-1 rounded-lg border border-zinc-200 bg-white p-4 transition-colors hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:bg-zinc-800"
+            >
+              <h3 className="font-medium text-black dark:text-zinc-50 group-hover:text-zinc-900 dark:group-hover:text-zinc-100">
+                Creating The Lifting Log
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                Description for creating the lifting log post
+              </p>
+            </a>
+            <a
+              href="/blog/what-is-speedcubing"
+              className="group flex flex-col gap-1 rounded-lg border border-zinc-200 bg-white p-4 transition-colors hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:bg-zinc-800"
+            >
+              <h3 className="font-medium text-black dark:text-zinc-50 group-hover:text-zinc-900 dark:group-hover:text-zinc-100">
+                What is Speedcubing
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                Description for what is speedcubing post
+              </p>
+            </a>
+            <a
+              href="/blog/my-speedcubing-journey"
+              className="group flex flex-col gap-1 rounded-lg border border-zinc-200 bg-white p-4 transition-colors hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:bg-zinc-800"
+            >
+              <h3 className="font-medium text-black dark:text-zinc-50 group-hover:text-zinc-900 dark:group-hover:text-zinc-100">
+                My Speedcubing Journey
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                Description for my speedcubing journey post
+              </p>
+            </a>
+          </div>
         </div>
       </main>
     </div>
