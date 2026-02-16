@@ -40,12 +40,7 @@ export default async function RootLayout({
 
           {children}
 
-          <Footer>
-            {new Date().getFullYear()} © Kevin Tatooles
-            <a href="/feed.xml" style={{ float: "right" }}>
-              RSS
-            </a>
-          </Footer>
+          <Footer>{new Date().getFullYear()} © Kevin Tatooles</Footer>
         </Layout>
       </body>
     </html>
